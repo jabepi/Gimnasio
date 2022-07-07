@@ -1,0 +1,84 @@
+
+
+div.inicioSesion{
+    position: relative;
+    width: 35vw;
+    min-width: 300px;
+    max-width: 500px;
+    height: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.1);
+}
+
+/*Etiqueda e input*/
+div.inicioSesion > div.email {
+    padding-top: 25px;
+    display: block;
+}
+div.inicioSesion > div.pass {
+    padding-top: 25px;
+    display: block;
+}
+
+
+/*Botones*/
+div.inicioSesion > div.botonesLog{
+    margin-top: 20px;
+
+}
+
+/*Pantallas grandes*/
+@media only screen and (min-width: 1360px) {
+
+    /*Cambiar tamaño de fondo*/
+    div.inicioSesion{
+        height: 280px;
+    }
+
+    /*Reposicionar elementos*/
+    div.inicioSesion > div.email {
+        padding-top: 50px;
+        display: block;
+    }
+
+    div.botonesLog > button.botonSub{
+        margin-top: 25px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    div.inicioSesion > div > label.email {
+        float: left;
+        padding-left: 50px;
+    }
+
+    div.inicioSesion > div > input.standar {
+        float: right;
+        margin-right: 50px;
+        width: 20vw;
+        max-width: 287px;
+    }
+}
+
+/*Pantallas pequeñas*/
+@media only screen and (max-width: 1360px) {
+
+    div.inicioSesion > div.email {
+        padding-top: 50px;
+    }
+    div.inicioSesion > div > label.email{
+        display: block;
+    }
+    div.inicioSesion > div > input.standar {
+        margin-top: 10px;
+        width: 25vw;
+        min-width: 200px;
+    }
+
+}
+

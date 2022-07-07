@@ -1,0 +1,140 @@
+
+div.buscar {
+    position: relative;
+    width: 50%;
+    min-width: 350px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 40px;
+    background: none;
+}
+
+div.buscar > input.standar {
+    margin: auto;
+    width: 80%;
+
+}
+
+div.buscar > button.botonGordo {
+    transform: translateY(1px);
+}
+
+div.listVideo {
+
+    margin-top: 30px;
+    position: relative;
+    width: 80%;
+    min-width: 350px;
+
+    margin-right: auto;
+    margin-left: auto;
+    height: fit-content;
+    background: none;
+}
+
+.item1 {
+    grid-area: foto;
+}
+
+.item2 {
+    grid-area: titulo;
+}
+
+.item3 {
+    grid-area: desc;
+}
+
+
+
+
+/*Miniatura*/
+div.listVideo > div.ejercicio > figure {
+    width: 15vw;
+    min-width: 150px;
+}
+div.listVideo > div.ejercicio > figure > a{
+    display: inline-block;
+}
+div.listVideo > div.ejercicio > figure > a > img {
+    margin: auto;
+    width: 15vw;
+    min-width: 150px;
+    aspect-ratio: 1.6;
+    border-radius: 10px;
+    /*Corrección para bonito*/
+    transform: scale(1.02) translateY(2px);
+}
+
+div.listVideo > div.ejercicio > figure > a > img:hover {
+
+}
+
+div.listVideo > div.ejercicio > figure > a > img:active {
+
+}
+
+
+/*Descripcion*/
+div.listVideo > div.ejercicio > h4{
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 0;
+}
+div.listVideo > div.ejercicio > p{
+
+    padding: 0;
+    margin: 0;
+}
+
+div.listVideo > div.ejercicio {
+    border-radius: 10px;
+    background: rgba(103, 103, 103, 0.8);
+    margin-top:  25px;
+    gap: 1vw;
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 800px) {
+    /*Contenedor de ejercicio*/
+    div.listVideo > div.ejercicio {
+        display: grid;
+        grid-template-areas:
+    'foto foto foto  titulo titulo titulo'
+    'foto foto foto  desc desc desc'
+    'foto foto foto  desc desc desc'
+    'foto foto foto  desc desc desc';
+
+
+    }
+}
+
+/*Pantallas pequeñas*/
+@media only screen and (max-width: 800px) {
+
+    /*Contenedor de ejercicio*/
+    div.listVideo > div.ejercicio {
+        display: grid;
+        grid-template-areas:
+    'foto foto foto  titulo titulo titulo'
+    'foto foto foto  titulo titulo titulo'
+    'foto foto foto  titulo titulo titulo'
+    'foto foto foto  titulo titulo titulo';
+
+        align-items: center;
+    }
+
+    div.listVideo > div.ejercicio > p {
+        display: none;
+    }
+
+    div.listVideo > div.ejercicio > h4{
+        margin: 0;
+        padding: 0;
+        font-size: 3vw;
+
+
+    }
+
+}

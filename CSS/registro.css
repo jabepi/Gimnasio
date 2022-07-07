@@ -1,0 +1,97 @@
+
+div.registrarse{
+    position: relative;
+    width: 35vw;
+    min-width: 300px;
+    max-width: 500px;
+    height: 380px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.1);
+}
+
+
+/*Etiqueda e input*/
+div.registrarse > div.email {
+    padding-top: 50px;
+    display: block;
+}
+
+div.registrarse > div.pass {
+    padding-top: 25px;
+    display: block;
+}
+
+div.registrarse > button.botonGordo{
+    display: block;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/*Pantallas grandes*/
+@media only screen and (min-width: 1360px) {
+
+    /*Cambiar tamaño de fondo*/
+    div.registrarse{
+        height: 300px;
+    }
+    /*Reposicionar elementos*/
+    div.registrarse > div.email {
+        padding-top: 50px;
+        display: block;
+    }
+
+    div.registrarse > div > label.email {
+        float: left;
+        padding-left: 50px;
+    }
+
+    div.registrarse > div > input.standar {
+        float: right;
+        margin-right: 50px;
+        width: 20vw;
+        max-width: 287px;
+    }
+    div.registrarse > div > input.standar2 {
+        margin-top: 10px;
+        float: right;
+        margin-right: 50px;
+        width: 20vw;
+        max-width: 287px;
+    }
+}
+
+/*Pantallas pequeñas*/
+@media only screen and (max-width: 1360px) {
+
+    div.registrarse > button.botonGordo{
+
+        margin-top: 30px;
+
+    }
+
+    div.registrarse > div.email {
+        padding-top: 50px;
+    }
+    div.registrarse > div > label.email{
+        display: block;
+    }
+    div.registrarse > div > input.standar {
+        margin-top: 10px;
+        width: 25vw;
+        min-width: 200px;
+
+    }
+    div.registrarse > div > input.standar2 {
+        margin-top: 5px;
+        width: 25vw;
+        min-width: 200px;
+    }
+
+}

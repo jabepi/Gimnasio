@@ -1,0 +1,28 @@
+
+@import "despH.css";
+@import "entrenadores/entrenadores.css";
+@import "entrenadores/contactar.css";
+@import "login.css";
+@import "registro.css";
+@import "ejercicios.css";
+@import "comun.css";
+@import "menu.css";
+@import "entrenadores/videos.css";
+@import "alimentacion.css";
+@import "rutinas.css";
+
+body{
+
+    margin: 0;
+    height: 100%;
+    background-image: url("Imagenes/Fondo1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color: #030303;
+}
+
+
+
+

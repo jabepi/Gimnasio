@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+
+  "titulo":
+  {
+    "contenido": "Rutinas"
+  },
+
+  "rutas": {
+    "rutaImagenes": "./CSS/Imagenes/Rutinas/Main/",
+    "rutaLink": "./HTML/Rutinas/"
+   },
+
+  "imagenes":
+  [
+    {
+      "imagen": "Abdominales.png",
+      "rutaLink": "Abdominales/abdominales.html"
+    },
+    {
+      "imagen": "Biceps.png",
+      "rutaLink": "Biceps/biceps.html"
+    },
+    {
+      "imagen": "Espalda.png",
+      "rutaLink": "Espalda/espalda.html"
+    },
+    {
+      "imagen": "Gemelos.png",
+      "rutaLink": "Gemelos/gemelos.html"
+    },
+    {
+      "imagen": "Gluteos.png",
+      "rutaLink": "Gluteos/gluteos.html"
+    },
+    {
+      "imagen": "Pectorales.png",
+      "rutaLink": "Pectorales/pectorales.html"
+    }
+  ]
+
+}
+
+

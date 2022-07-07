@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<alimentacion>
+    <definicion>
+        <rd1>
+            <nombre>EnsaldaLentejas</nombre>
+            <imagen>../../../CSS/Imagenes/Comida/TarjetaEnsalada.png</imagen>
+            <link>Definicion/1.EnsaladaLentejas.html</link>
+        </rd1>
+        <rd2>
+            <nombre>PapiloteBacalao</nombre>
+            <imagen>../../../CSS/Imagenes/Comida/tarjetaPapillote.png</imagen>
+            <link>Definicion/2.papiloteBacalao.html</link>
+        </rd2>
+    </definicion>
+
+    <volumen>
+        <rv1>
+            <nombre>batidoCacahuete</nombre>
+            <imagen>../../../CSS/Imagenes/Comida/TarjetaBatido.png</imagen>
+            <link>Volumen/1.batidoCacahuete.html</link>
+        </rv1>
+        <rv2>
+            <nombre>YougurGriego</nombre>
+            <imagen>../../../CSS/Imagenes/Comida/TarjetaYogur.png</imagen>
+            <link>Volumen/2.YougurGriego.html</link>
+        </rv2>
+    </volumen>
+</alimentacion>

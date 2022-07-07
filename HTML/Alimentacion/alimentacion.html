@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Alimentación, Ejercicio, Fitnes, Salud, Entrenador, Rutina">
+    <meta name="desciption" content="Web de vida saludable con ejercicios y alimentación">
+    <meta name="authors" content="Martin Campos Zamora y Javier Beiro Piñón">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="../../CSS/alimentacion.css">
+    <title>FitYou</title>
+</head>
+
+
+<body>
+
+
+<!--Elementos Cabecera/Menu-->
+<div class="fijo">
+
+    <header class="cabecera">
+        <!--Logo-->
+        <figure><a href="../../index.html"> <img class="logo" src="../../CSS/Imagenes/Cabecera/Logo.png" alt="Logo">
+        </a></figure>
+
+        <!--cabecera-->
+        <figure><img class="cabecera" src="../../CSS/Imagenes/Cabecera/Cabecera.png" alt="Cabecera"></figure>
+
+        <!-- Menú de Log y Registro-->
+        <ul class="sign_log">
+            <li><a href="../../HTML/logIn.html"> Login </a></li>
+            <li><a href="../../HTML/registro.html"> Registro </a></li>
+        </ul>
+    </header>
+    <!-- Menú pricipal-->
+
+    <nav>
+        <ul class="menu">
+            <li><a href="../../HTML/Entrenadores/entrenadores.html"> Entrenadores </a></li>
+            <li><a href="../../HTML/Rutinas/rutinas.html"> Rutinas </a></li>
+            <li><a href="../../HTML/Ejercicios/ejercicios.html"> Ejercicio </a></li>
+            <li><a href="../../HTML/Alimentacion/alimentacion.html"> Alimetación </a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<!-- ----------------------------------------- Cuerpo de la página ----------------------------------------- -->
+
+<main class="contendio">
+    <h1>Alimentación</h1>
+
+    <section>
+        <div class="listaA">
+
+            <div class="tar">
+                <a onclick="cargaDefinicion()">
+                    <img src="../../CSS/Imagenes/Comida/Definicion.png" alt="Definicion"></a>
+            </div>
+            <div class="tar">
+                <a onclick="cargaVolumen()">
+                    <img src="../../CSS/Imagenes/Comida/Volumen.png" alt="Volumen"></a>
+            </div>
+
+
+        </div>
+    </section>
+</main>
+
+<script src="../../JS/Decorator/decComun.js"></script>
+
+<!--Carga de tipos de recetas con XML-->
+
+<script>
+    function cargaDefinicion() {
+        var cont = document.getElementsByClassName("contendio");
+        //Borramos el contenido que habían en la página
+        cont.item(0).innerHTML = "";
+        //Se añade el título
+        cont.item(0).innerHTML += "<h1>" + "Recetas de Definición" + "</h1>";
+        //Parte XHTTP
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var xmlDoc = this.responseXML;
+                var txt = "<section>";
+                var x = xmlDoc.getElementsByTagName("definicion");
+
+                txt += "<div class=\"listaA\"> ";
+
+                for (var i = 1; i < x[0].childNodes.length; i = i + 2) {
+                    txt += " <div class=\"tar\"> <a href=\"" + x[0].childNodes.item(i).childNodes.item(5).textContent +
+                        "\"> <img src=\"" + x[0].childNodes.item(i).childNodes.item(3).textContent + "\" alt=\"" +
+                        x[0].childNodes.item(i).childNodes.item(1).textContent + "\"></a> </div>";
+                }
+                txt += "</div> </section>"
+                cont.item(0).innerHTML += txt;
+            }
+        }
+        xhttp.open("GET", "../../DatosDinamicos/alimentacion.xml", true);
+        xhttp.send();
+    }
+
+    function cargaVolumen() {
+        var cont = document.getElementsByClassName("contendio");
+        //Borramos el contenido que habían en la página
+        cont.item(0).innerHTML = "";
+
+        //Se añade el título
+        cont.item(0).innerHTML += "<h1>" + "Recetas de Volumen" + "</h1>";
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var xmlDoc = this.responseXML;
+                var txt = "<section>";
+                var x = xmlDoc.getElementsByTagName("volumen");
+
+                txt += "<div class=\"listaA\"> ";
+
+                for (var i = 1; i < x[0].childNodes.length; i = i + 2) {
+
+                    txt += " <div class=\"tar\"> <a href=\"" + x[0].childNodes.item(i).childNodes.item(5).textContent +
+                        "\"> <img src=\"" + x[0].childNodes.item(i).childNodes.item(3).textContent + "\" alt=\"" +
+                        x[0].childNodes.item(i).childNodes.item(1).textContent + "\"></a> </div>";
+
+                }
+                txt += "</div> </section>"
+                cont.item(0).innerHTML += txt;
+            }
+        }
+        xhttp.open("GET", "../../DatosDinamicos/alimentacion.xml", true);
+        xhttp.send();
+    }
+</script>
+
+</body>
+</html>

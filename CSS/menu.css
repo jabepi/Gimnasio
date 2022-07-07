@@ -1,0 +1,43 @@
+
+/* Barra de menú */
+
+/*Fondo menú*/
+ul.menu {
+    margin: 0;
+    padding-left: 0;
+    background-color: #4b5e77;
+    text-align: center;
+    height:  calc(20px + 2.5vw);
+    transform: translateY(-4px);
+}
+/*Elementos menú*/
+ul.menu > li {
+    /**/
+    display: inline-block;
+    padding-left: 30px;
+    margin-top: 0;
+
+    /*Centrar accesos*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Texto interior*/
+ul.menu > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: calc(10px + 0.4vw);
+    font-family: "Roboto Thin", sans-serif;
+}
+ul.menu > li > a:hover{
+    color: #FACC02;
+}
+ul.menu > li> a:active {
+    color: #a48504;
+}
+
+a.selecc {
+    color: #FACC02;
+    text-underline: #FACC02;
+}

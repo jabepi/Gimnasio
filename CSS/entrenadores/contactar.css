@@ -1,0 +1,119 @@
+div.contactar{
+    position: relative;
+    width: 40vw;
+    min-width: 320px;
+    max-width: 600px;
+    height: 520px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.1);
+}
+
+div.contactar > div.entrenador {
+    width: 100%;
+    padding-top: 25px;
+    height: fit-content;
+    display: block;
+}
+
+div.contactar > div.entrenador > img{
+    float: left;
+    display: inline-block;
+    margin-left: 40px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+div.contactar > div.entrenador > h3{
+
+    padding-left: 30px;
+    float: left;
+    display: inline-block;
+}
+div.contactar > div.campos{
+    padding-top: 80px;
+    display: block;
+}
+
+div.contactar > div.campos > div{
+    margin-top: 25px;
+}
+div.campos > div > textarea{
+    height: 100px;
+}
+div.campos > div > select{
+    margin-bottom: 10px;
+}
+
+div.contactar > div.campos > button.botonGordo{
+    display: block;
+    margin-top: 160px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*Pantallas grandes*/
+@media only screen and (min-width: 1360px) {
+
+    div.campos > div > label{
+        float: left;
+        padding-left: 50px;
+    }
+
+    div.campos > div > input {
+        float: right;
+        margin-right: 50px;
+        width: 25vw;
+        min-width: 200px;
+        max-width: 380px;
+    }
+    div.campos > div > textarea{
+        float: right;
+        margin-right: 50px;
+        width: 25vw;
+        min-width: 200px;
+        max-width: 380px;
+
+    }
+
+}
+
+/*Pantallas pequeñas*/
+@media only screen and (max-width: 1360px) {
+
+    div.contactar > div.entrenador > h3{
+        font-size: 20px;
+    }
+
+    div.campos > div > label {
+        display: block;
+    }
+
+    div.contactar > div.campos > button.botonGordo {
+
+        margin-top: 40px;
+    }
+    div.contactar{
+        height: 700px;
+    }
+
+    div.campos > div > select{
+        margin-top: 20px;
+    }
+    div.campos > div > input {
+        margin-top: 20px;
+        width: 25vw;
+        min-width: 280px;
+    }
+    div.campos > div > textarea{
+        margin-top: 20px;
+        width: 25vw;
+        min-width: 280px;
+    }
+
+
+}

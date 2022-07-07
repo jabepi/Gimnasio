@@ -1,0 +1,130 @@
+
+div.listaV {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    text-align: center;
+}
+
+div.listaV > div.tarjeta{
+    display: inline-block;
+    height: fit-content;
+    width: 17vw;
+    min-width: 200px;
+
+    padding-bottom: 1.5vw;
+    padding-right: 4vw;
+    margin: 0;
+}
+
+div.listaV > div.tarjeta > img{
+
+    width: 17vw;
+    min-width: 200px;
+
+}
+
+
+/*Controlar tamaños de botones*/
+
+/*Tamaño de pantalla grande*/
+div.listaV > div.tarjeta > div.botones {
+
+    float: right;
+    position: relative;
+    bottom: 4vw;
+    right: 20px;
+
+}
+div.listaV > div.tarjeta > div.botones > button.cont {
+
+    width: 4.5vw;
+    max-width: 340px;
+
+    font-size: 0.8vw;
+    text-align: center;
+    background-color: #5AA0D3;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: "Roboto Thin", sans-serif;
+
+}
+div.listaV > div.tarjeta > div.botones > button.vid {
+
+    width: 4vw;
+    max-width: 340px;
+    margin-right: 0.5vw;
+
+    font-size: 0.8vw;
+    text-align: center;
+    background-color: #5AA0D3;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: "Roboto Thin", sans-serif;
+}
+
+/*Decoraciónes al clicar*/
+div.listaV > div.tarjeta > div.botones > button.cont:hover {
+    background-color: #4a83ad;
+}
+div.listaV > div.tarjeta > div.botones > button.cont:active {
+    background-color: #3f7091;
+}
+div.listaV > div.tarjeta > div.botones > button.vid:hover {
+    background-color: #4a83ad;
+}
+div.listaV > div.tarjeta > div.botones > button.vid:active {
+    background-color: #3f7091;
+}
+
+
+/*En caso de que la pantalla sea pequeña*/
+@media only screen and (max-width: 1400px) {
+
+
+    div.listaV >div.tarjeta{
+        padding-bottom: 0;
+        height: fit-content;
+    }
+
+    div.listaV > div.tarjeta > div.botones {
+
+        float: right;
+        position: relative;
+        bottom: 70px;
+        right: 60px;
+        width: 20px;
+
+
+    }
+
+
+    div.listaV > div.tarjeta > div.botones > button.cont {
+
+        width: 4vw;
+        min-width: 60px;
+        max-width: 340px;
+
+        font-size: 10px;
+        margin-top: 10px;
+
+    }
+    div.listaV > div.tarjeta > div.botones > button.vid {
+
+        width: 4vw;
+        min-width: 60px;
+        max-width: 340px;
+
+        font-size: 10px;
+    }
+
+
+}
+
+
+
+

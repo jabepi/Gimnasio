@@ -1,0 +1,24 @@
+div.listaV > div.rutina{
+    display: inline-block;
+    height: fit-content;
+    width: 17vw;
+    min-width: 200px;
+
+    padding-bottom: 1.5vw;
+    padding-right: 4vw;
+    margin: 0;
+}
+
+div.listaV > div.rutina > a > img{
+
+    width: 17vw;
+    min-width: 200px;
+
+}
+
+
+
+.video {
+    position: relative;
+    width: 40vw;
+}

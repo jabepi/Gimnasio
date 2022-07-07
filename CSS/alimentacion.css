@@ -1,0 +1,98 @@
+div.listaA {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    text-align: center;
+}
+
+div.listaA > div.tar{
+    display: inline-block;
+    height: fit-content;
+    width: 17vw;
+    min-width: 200px;
+
+    padding-bottom: 1.5vw;
+    padding-right: 4vw;
+    margin: 0;
+}
+
+div.listaA > div.tar > a > img{
+
+    width: 17vw;
+    min-width: 200px;
+
+}
+/*************************************************************/
+.container {
+    display: flex;
+    align-items: center;
+    
+    width: 90%;
+
+}
+.container__image {
+    width: 17vw;
+    min-width: 200px;
+
+    margin-right: 5vw;
+    margin-left: 5vw;
+
+    border-radius: 10px;
+}
+
+.container__feature {
+
+    margin-top: 5vw;
+
+    padding-right: 10%;
+    padding-bottom: 3%;
+
+    background: rgba(103, 103, 103, 0.8);
+    border-radius: 10px;
+
+    font-family: "Roboto Thin", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+
+
+    color: #FFFFFF;
+
+}
+
+.elaboracion {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+
+
+    background: rgba(103, 103, 103, 0.8);
+    border-radius: 10px;
+
+    font-family: "Roboto Thin", sans-serif;
+    font-style: normal;
+
+
+
+    color: #FFFFFF;
+}
+
+
+/*En caso de que la pantalla sea pequeña*/
+@media only screen and (max-width: 1400px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 5vw;
+        margin-right: 5vw
+    }
+
+}

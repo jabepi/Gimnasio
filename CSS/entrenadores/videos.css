@@ -1,0 +1,140 @@
+@media only screen and (min-width: 800px) {
+    div.videos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    div.videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 5vw;
+        margin-right: 5vw
+    }
+}
+
+/*Video grande*/
+@media only screen and (min-width: 800px) {
+    div.videos > div.video {
+        text-align: center;
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+    div.videos > div.video {
+        margin: auto;
+        text-align: center;
+        width: 80vw;
+    }
+}
+
+/*video*/
+@media only screen and (min-width: 800px) {
+    div.videos > div.video > figure {
+        width: 40vw;
+        height: fit-content;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    div.videos > div.video > figure {
+        width: 80vw;
+        height: fit-content;
+        margin: auto;
+    }
+}
+
+div.videos > div.video > figure > iframe {
+    border: none;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 1.7;
+    border-radius: 10px;
+}
+
+/*Descripción*/
+/*--Contenedor (foto, nombre, título)*/
+div.videos > div.video > div.titulo {
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    height: 60px;
+}
+
+/*--Contenedor (foto, nombre)*/
+div.videos > div.video > div.titulo > div.entrenador {
+    display: inline-block;
+    float: left;
+    margin-left: 1vw;
+}
+
+/*--Foto entrenador*/
+div.videos > div.video > div.titulo > div.entrenador > img {
+    display: inline-block;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+/*--Nombre entrenador*/
+div.videos > div.video > div.titulo > div.entrenador > h3 {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+/*--Títulos*/
+div.videos > div.video > div.titulo > h3 {
+    display: inline-block;
+    float: right;
+    margin-right: 1vw;
+    margin-top: fill;
+}
+/*--Texto*/
+/*H2 descripción*/
+div.videos > div.video > h2 {
+    text-align: left;
+    padding-left: 1vw;
+}
+/*texto con Descripción completa*/
+div.videos > div.video > p {
+    text-align: justify;
+    padding-left: 1vw;
+}
+
+
+/*Videos laterales*/
+@media only screen and (min-width: 800px) {
+    div.videos > div.listVideo{
+        padding-left: 4vw;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    div.videos > div.listVideo{
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+}
+
+div.videos > div.listVideo > h3{
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
