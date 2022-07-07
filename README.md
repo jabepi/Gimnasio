@@ -1,7 +1,7 @@
 # Gimnasio
 #EN 
 FitYou web page was developed to approach information about physical exercise, trainers, and meals to users who may or may not be subscripted.
-This whole created in cooperation with Martin Campos Zamora. Technical and use related information can be found on the INFO.pdf file. 
+This whole project was created in cooperation with Martin Campos Zamora. Technical and use related information can be found on the INFO.pdf file. 
 
 #ES
 FitYou es una página web que aporta información a usuarios, con o sin registro en ella, acerca de ejerccios, entrenamientos y comidas. La 
